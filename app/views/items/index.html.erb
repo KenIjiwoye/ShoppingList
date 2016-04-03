@@ -1,5 +1,6 @@
 <% if user_signed_in? %>
 	<h1>Shopping List!</h1>
+	<hr>
 
 	<% @items.each do |item| %>
 		<h1><%= link_to item.title, item %></h1>

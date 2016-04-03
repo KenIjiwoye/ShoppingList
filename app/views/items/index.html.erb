@@ -1,10 +1,10 @@
-<h1>Shopping List!</h1>
+<% if user_signed_in? %>
+	<h1>Shopping List!</h1>
 
-<% @items.each do |item| %>
-	<h1><%= link_to item.title, item %></h1>
-	<p><%= item.description %></p>
+	<% @items.each do |item| %>
+		<h1><%= link_to item.title, item %></h1>
+		<p><%= item.description %></p>
+	<% end %>
+	<% else %>
+	<%= render 'layouts/home_landing_page' %>
 <% end %>
-
-<%= link_to "New", new_item_path %>
-
-<%= link_to "Sign Up", new_user_registration_path %>

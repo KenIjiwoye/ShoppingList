@@ -17,6 +17,28 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar-default {
+	background-color: #e74c3c;
+	border-color: #e74c3c;
+
+}
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a {
+	color: #fff;
+}
+.navbar-default .navbar-text {
+	color: #fff;
+}
+.navbar-default .container {
+	padding-top: 10px;
+}
+
+
 #main-header {
 	text-align: center;
 }
@@ -29,4 +51,7 @@
 	background-color: #f2dede;
 	border-color: #ebccd1;
 	color: #a94442;
+}
+#list-body {
+	text-align:center;
 }

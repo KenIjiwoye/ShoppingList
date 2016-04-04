@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 </head>
-<body>
+<body style="background-color: #34495e;">
 
 	<nav class="navbar navbar-default">
 		<div class="container">
@@ -19,7 +19,7 @@
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 		      </button>
-		      <%= link_to "Shopping LIst", root_path, class: "navbar-brand" %>
+		      <%= link_to "Task Keeper", root_path, class: "navbar-brand" %>
 			</div>
 			<ul class="nav navbar-nav">
 				<li> <%= link_to "Sign Up", new_user_registration_path %> </li>
@@ -30,7 +30,7 @@
 				<% end %>
 			</ul>
 			<% if user_signed_in? %>
-				<%= link_to "Add new items", new_item_path, class: "navbar-text navbar-right" %>
+				<%= link_to "Add new items", new_item_path, class: "navbar-text navbar-right btn btn-primary" %>
 			<% end %>
 		</div>
 	</nav>

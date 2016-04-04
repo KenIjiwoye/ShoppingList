@@ -37,7 +37,7 @@
 .navbar-default .container {
 	padding-top: 10px;
 }
-
+/*NAVBAR CSS STYLES*********************/
 
 #main-header {
 	text-align: center;
@@ -54,4 +54,19 @@
 }
 #list-body {
 	text-align:center;
+}
+
+.col-md-8 {
+	padding-top: 25px;
+	text-align: center;
+}
+.panel-body .fa-lg {
+	font-size: 40px;
+	/*padding-bottom: 25px;*/
+}
+#section {
+	padding-bottom: 25px;
+}
+#show-view {
+	text-align: center;
 }

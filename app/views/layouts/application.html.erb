@@ -14,7 +14,7 @@
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-close" aria-expanded="false">
 			        <span class="sr-only">Toggle navigation</span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
@@ -22,7 +22,7 @@
 		      </button>
 		      <%= link_to "Task Keeper", root_path, class: "navbar-brand" %>
 			</div>
-			<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav collapse navbar-collapse" id="bs-close">
 				<li> <%= link_to "Sign Up", new_user_registration_path %> </li>
 				<% if current_user.present? %>
 					<li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>

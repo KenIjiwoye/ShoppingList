@@ -1,11 +1,12 @@
-<div class="panel panel-default">
+<div class="panel panel-default" data-no-turbolink = "true" >
 	<div class="panel-heading">
 		<div class="panel-title">
 			<h2>Log in</h2>
 		</div>
 	</div>
-	<div class="panel-body">
 <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+	<div class="panel-body">
+
   <div class="form-inputs">
     <%= f.input :email, required: false, autofocus: true %>
     <%= f.input :password, required: false %>

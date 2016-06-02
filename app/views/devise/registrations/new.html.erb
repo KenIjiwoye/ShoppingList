@@ -1,10 +1,10 @@
-<div class="panel panel-default">
+<div class="panel panel-default" data-no-turbolink = "true" >
 	<div class="panel-heading">
 		<h2>Sign up</h2>
 	</div>
-
+	<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
 	<div class="panel-body">
-		<%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+		
 		  <%= f.error_notification %>
 
 		  <div class="form-inputs">

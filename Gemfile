@@ -14,6 +14,12 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'launchy'
+group :development, :test do
+  gem 'rspec-rails', '~> 3.4'
+  gem 'capybara'
+  gem 'factory_girl_rails'
+end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

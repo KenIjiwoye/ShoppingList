@@ -1,11 +1,7 @@
 == README
 Rails app inspired by Google keep.
 
-Tests are ran using rspec, capybara, and factory girl. 
+Tests are ran using rspec, capybara, and factory girl. (currently adding more test when time permits.)
 currently deployed to heroku.
 
 
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
